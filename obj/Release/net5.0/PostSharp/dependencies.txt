@@ -1,0 +1,3 @@
+D:\Development\AutoCryptoMiner\AutomaticCryptoMiner\AutomaticCryptoMiner\obj\Release\net5.0\PostSharp\PostSharp.Compiler.Engine.dll
+D:\Development\AutoCryptoMiner\AutomaticCryptoMiner\AutomaticCryptoMiner\obj\Release\net5.0\PostSharp\postsharp.config
+D:\Development\AutoCryptoMiner\AutomaticCryptoMiner\AutomaticCryptoMiner\postsharp.config

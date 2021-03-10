@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="71" PostSharpLinesOfCode="0" EnhancedTypesCount="1" SchemaVersion="1" PostSharpVersion="6.8.9.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[AutomaticCryptoMiner]AutomaticCryptoMiner.Aspects.StartUp">
+    <Instance Declaration="#2=M:[AutomaticCryptoMiner]AutomaticCryptoMiner.Program::Main(System.String[])" Id="65ecafcdea30d1ec">
+      <Target>
+        <JoinPoint Description="#3=Wrapped by advice(s) " Ordinal="0" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>
