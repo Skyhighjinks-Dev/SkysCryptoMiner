@@ -5,7 +5,7 @@ using System.IO;
 
 namespace AutomaticCryptoMiner.Aspects
 {
-  public class LoggerAspect : ISkyStaticInterface
+  public class LoggerAspect : ISkyAspect
   {
     public void Initalize()
     {

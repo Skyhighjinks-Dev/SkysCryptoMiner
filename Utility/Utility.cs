@@ -20,9 +20,9 @@ namespace AutomaticCryptoMiner.Utility
       { 
         toReturn = ConfigurationManager.AppSettings[nConfigName];
       }
-      catch(Exception)
+      catch(Exception ex)
       { 
-        // Log
+        Serilog.Log.Error(ex.ToString());
       }
 
       return toReturn;

@@ -25,7 +25,7 @@ namespace AutomaticCryptoMiner.Miner
     }
 
     private static Thread CurrentThread;
-    private static WalletOptions CurrentOption;
+    private static WalletOptions? CurrentOption;
 
     public static void Initialize()
     {
@@ -48,23 +48,34 @@ namespace AutomaticCryptoMiner.Miner
       return CurrentThread;
     }
 
-    private async static Task ControlThread()
+    private async static Task<bool> UpdateThread()
     { 
-      while(true)
-      { 
+      
+
+      return await Task.FromResult(true);
+    }
+
+    private async static Task ControlThread()
+    {
+      while (true)
+      {
         try
-        { 
-          // Do shit later
+        {
+          if (CurrentOption == null)
+          {
+            await UpdateThread();
+          }
         }
-        catch(Exception ex)
-        { 
+        catch (Exception ex)
+        {
           Serilog.Log.Error(ex.ToString());
-        } 
+        }
         finally
-        { 
+        {
           Thread.Sleep(60 * 1000);
         }
       }
     }
+
   }
 }

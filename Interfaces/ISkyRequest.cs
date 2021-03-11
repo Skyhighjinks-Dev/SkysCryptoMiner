@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AutomaticCryptoMiner.Interfaces
 {
-  public interface ISkyStaticInterface
+  public interface ISkyRequest
   {
-    public abstract void Initalize();
+    public string Content { get; }
   }
 }

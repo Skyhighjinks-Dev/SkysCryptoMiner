@@ -3,10 +3,7 @@ using AutomaticCryptoMiner.Miner;
 using PostSharp.Aspects;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutomaticCryptoMiner.Aspects
 {
@@ -15,10 +12,11 @@ namespace AutomaticCryptoMiner.Aspects
   {
     public override void RuntimeInitialize(MethodBase method)
     {
-      List<ISkyStaticInterface> toInitalize = new List<ISkyStaticInterface>
+      List<ISkyAspect> toInitalize = new List<ISkyAspect>
       {
         new LoggerAspect(),
-        new WalletAspect()
+        new WalletAspect(),
+        new PoolAspect()
       };
 
       toInitalize.ForEach(x => x.Initalize());

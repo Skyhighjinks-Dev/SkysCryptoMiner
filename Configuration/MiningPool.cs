@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomaticCryptoMiner.Configuration
 {
-  public static class WalletAddress
+  public static class MiningPool
   {
     public static string Btc { get; set; }
     public static string Eth { get; set; }
